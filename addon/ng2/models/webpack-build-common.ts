@@ -36,6 +36,7 @@ export function getWebpackCommonConfig(
   return {
     devtool: 'source-map',
     resolve: {
+      mainFields: ['browser', 'main'],
       extensions: ['', '.ts', '.js'],
       root: appRoot
     },
